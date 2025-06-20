@@ -6,6 +6,7 @@ Los proyectos fueron desarrollados en Visual Studio Code
 ---
 
 ## 📁 Estructura del Repositorio
+
 ├── TP02/
 │   ├── Ejercicio01/
 │   │   ├── Ejercicio01.py

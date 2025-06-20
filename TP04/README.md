@@ -64,7 +64,7 @@ Ingresa un número mayor que 5 y menor que 20: 7
 **Por favor, ingresa un número entero válido.**
 
 
-# Ejercicio 2 Inversión de Cadena y Conteo de Caracteres
+# Ejercicio 2 
 
 Este proyecto en Python permite ingresar una cadena de texto y obtener una lista de sus caracteres en orden inverso, junto con la cantidad total de caracteres. Todo esto se realiza sin utilizar funciones ni librerías externas, como reversed(), len(), list(), etc.
 
@@ -121,7 +121,7 @@ La salida será:
 } 
 ```
 
-# Ejercicio 3 - Codificador y Decodificador de Texto 
+# Ejercicio 3 - 
 
 Este programa en Python permite codificar una cadena de texto convirtiendo cada carácter en su representación numérica y también decodificarla para obtener nuevamente el texto original.
 
@@ -160,7 +160,7 @@ Texto codificado: 101,115,116,101,32,101,115,32,117,110,32,101,106,101,109,112,1
 Texto decodificado: este es un ejemplo
 ```
 
-# Ejercicio 5 - Pruebas A/B en Publicidad de Zapatillas
+# Ejercicio 5 - 
 
 Este proyecto consiste en un programa en Python para realizar pruebas A/B en la publicidad de una marca de zapatillas. Permite ingresar datos como la cantidad de clicks y espectadores involucrados en dos tipos de publicidad, calcular estadísticas relevantes y realizar pruebas estadísticas.
 

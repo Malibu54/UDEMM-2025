@@ -5,65 +5,66 @@ Los proyectos fueron desarrollados en Visual Studio Code
 
 ---
 
-## 📁 Estructura del Repositorio
+```
+📁 Estructura del Repositorio
 
 ├── TP02/
-│   ├── Ejercicio01/
-│   │   ├── Ejercicio01.py
-│   │   └── README.md
-│   └── Ejercicio02-03/
-│   │   ├── Ejercicio02.py
-│   │   └── README.md
-│   └── Ejercicio04/
-│   │   └── Ejercicio04.py
-│   └── Ejercicio05/
-│   │   └── Ejercicio05.py
-├── README.md 
-├── TP03/
-│   ├── Ejercicio01/
-│   │   ├── Ejercicio01.py
-│   │   └── README.md
-│   └── Ejercicio02/
-│   │   ├── Ejercicio02.py
-│   │   └── README.md
-│   └── Ejercicio03/
-│   │   ├── Ejercicio03.py
-│   └── Ejercicio04/
-│   │   ├── Ejercicio04.py
-│   │   └── BANK_DATA1.csv
-│   │   └── BANK_DATA2.csv
-│   │   └── BANK_DATA3.csv
+│ ├── Ejercicio01/
+│ │ ├── Ejercicio01.py
+│ │ └── README.md
+│ └── Ejercicio02-03/
+│ │ ├── Ejercicio02.py
+│ │ └── README.md
+│ └── Ejercicio04/
+│ │ └── Ejercicio04.py
+│ └── Ejercicio05/
+│ │ └── Ejercicio05.py
 ├── README.md
+├── TP03/
+│ ├── Ejercicio01/
+│ │ ├── Ejercicio01.py
+│ │ └── README.md
+│ └── Ejercicio02/
+│ │ ├── Ejercicio02.py
+│ │ └── README.md
+│ └── Ejercicio03/
+│ │ ├── Ejercicio03.py
+│ └── Ejercicio04/
+│ │ ├── Ejercicio04.py
+│ │ └── BANK_DATA1.csv
+│ │ └── BANK_DATA2.csv
+│ │ └── BANK_DATA3.csv
 ├── TP04/
-│   ├── Ejercicio01/
-│   │   ├── Ejercicio01.py
-│   │   └── README.md
-│   └── Ejercicio02/
-│   │   ├── Ejercicio02.py
-│   │   └── README.md
-│   └── Ejercicio03/
-│   │   ├── Ejercicio03.py
-│   │   └── README.md
-│   └── Ejercicio04/
-│   │   ├── Ejercicio04.py
-│   │   └── README.md
-│   └── Ejercicio05/
-│   │   ├── Ejercicio05.py
-│   │   └── README.md
-│   └── Ejercicio06/
-│   │   ├── Ejercicio06.py
-│   │   └── README.md
+│ ├── Ejercicio01/
+│ │ ├── Ejercicio01.py
+│ │ └── README.md
+│ └── Ejercicio02/
+│ │ ├── Ejercicio02.py
+│ │ └── README.md
+│ └── Ejercicio03/
+│ │ ├── Ejercicio03.py
+│ │ └── README.md
+│ └── Ejercicio04/
+│ │ ├── Ejercicio04.py
+│ │ └── README.md
+│ └── Ejercicio05/
+│ │ ├── Ejercicio05.py
+│ │ └── README.md
+│ └── Ejercicio06/
+│ │ ├── Ejercicio06.py
+│ │ └── README.md
 ├── TP04-Complementario/
-│   ├── Ejercicio01/
-│   │   ├── Ejercicio01.py
-│   │   └── README.md
-│   └── Ejercicio02/
-│   │   ├── Ejercicio02.py
-│   │   └── README.md
-│   └── Ejercicio03/
-│   │   ├── Ejercicio03.py
-│   │   └── README.md
+│ ├── Ejercicio01/
+│ │ ├── Ejercicio01.py
+│ │ └── README.md
+│ └── Ejercicio02/
+│ │ ├── Ejercicio02.py
+│ │ └── README.md
+│ └── Ejercicio03/
+│ │ ├── Ejercicio03.py
+│ │ └── README.md
 └── README.md
+```
 
 ---
 

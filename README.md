@@ -92,8 +92,6 @@ Muy buena observación. Las instrucciones actuales están **cerca**, pero no se 
 
 ---
 
-### ✅ Versión mejorada y adaptada a tu estructura:
-
 ## 🚀 Instrucciones de Uso
 
 1. Cloná este repositorio o descargalo como archivo ZIP:

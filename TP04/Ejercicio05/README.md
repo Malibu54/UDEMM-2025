@@ -1,4 +1,3 @@
-
 # 🌳 Árbol Binario de Búsqueda con Persistencia en Disco
 
 Este proyecto implementa un **Árbol Binario de Búsqueda (BST)** en Python usando **Programación Orientada a Objetos (OOP)**. Además, incluye funcionalidades para **persistir el árbol a disco** utilizando `pickle`.
@@ -9,7 +8,7 @@ Este proyecto implementa un **Árbol Binario de Búsqueda (BST)** en Python usan
 
 Ejercicio05/
 │
-├── bst.py         # Lógica principal del programa
+├── Ejercicio05.py         # Lógica principal del programa
 └── README.md         # Este archivo
 
 ---
@@ -26,7 +25,7 @@ Ejercicio05/
 Para ejecutar el proyecto:
 
 ```bash
-python bst.py
+python Ejercicio05.py
 ````
 
 👨‍💻 Esto realizará:
@@ -82,4 +81,3 @@ loaded_tree = BinarySearchTree.load_from_file("arbol.pkl")
 
 MIT License © 2025 — Oriana Galíndez 🎓 Universidad de la Marina Mercante
 Este proyecto fue desarrollado con fines educativos como parte de un trabajo práctico.
-

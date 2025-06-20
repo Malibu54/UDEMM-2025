@@ -1,20 +1,15 @@
-
 # 🧮 Generador de Matriz Identidad en Python (POO)
 
 Este proyecto implementa un generador de **matrices identidad** utilizando **Programación Orientada a Objetos (POO)** en Python. Se hace uso de clases abstractas para definir una interfaz base para las matrices, y una clase concreta que construye la matriz identidad de tamaño `n x n`.
-
 
 ---
 
 ## 🏗️ Estructura del Proyecto
 
-
-
 Ejercicio06/
 │
-├── matriz-identidad.py         # Lógica principal del programa
+├── Ejercicio06.py         # Lógica principal del programa
 └── README.md         # Este archivo
-
 
 ---
 
@@ -30,7 +25,7 @@ Ejercicio06/
 Podes ejecutar el programa directamente desde la terminal:
 
 ```bash
-python matriz-identidad.py
+python Ejercicio06.py
 ````
 
 El programa construirá una matriz identidad del tamaño indicado (podes modificar el valor en el código).
@@ -39,14 +34,12 @@ El programa construirá una matriz identidad del tamaño indicado (podes modific
 
 ## 📌 Ejemplo de salida (n = 4)
 
-
 [1, 0, 0, 0]
 [0, 1, 0, 0]
 [0, 0, 1, 0]
 [0, 0, 0, 1]
 
 ---
-
 
 ## 🧱 Detalles de implementación
 
@@ -55,8 +48,6 @@ El programa construirá una matriz identidad del tamaño indicado (podes modific
 * Toda la lógica está en un solo archivo para simplicidad y cumplimiento de requisitos académicos.
 
 ---
-
-
 
 ## 📄 Licencia
 

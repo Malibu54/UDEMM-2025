@@ -20,7 +20,7 @@ from agencia.pedidos import get_pedidos, next, get_type, send_for_process
 ## 🚀 Ejecución
 
 ```bash
-python delivery.py
+python Ejercicio03.py
 ```
 
 Al ejecutarse:
@@ -41,14 +41,13 @@ Control de calidad procesadas: 2850
 Auditorías procesadas: 1170
 Total de registros procesados: 7541
 ```
-
 ---
 
 ## 🏗️ Estructura del Proyecto
 
 Ejercicio03/
 │
-├── delivery.py         # Lógica principal del programa
+├── Ejercicio03.py         # Lógica principal del programa
 └── README.md         # Este archivo
 
 ---

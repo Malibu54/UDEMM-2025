@@ -34,7 +34,7 @@ El sistema permite:
 
 ## ⚙️ Estructura del Proyecto
 
-- `reportes.py`: Lógica principal del sistema, estructurada con Programación Orientada a Objetos (POO).
+- `Ejercicio02.py`: Lógica principal del sistema, estructurada con Programación Orientada a Objetos (POO).
 - Clases principales:
   - `Paquete`: Representa un paquete de red.
   - `BaseDatos`: Simula una base de datos en memoria.
@@ -65,7 +65,7 @@ Este módulo simula el acceso a los paquetes y **debe estar disponible en el ent
 1. Ejecutar el archivo principal:
 
 ```bash
-python reports.py
+python Ejercicio02.py
 ```
 
 2. El sistema mostrará:
@@ -114,7 +114,7 @@ def next(lista):
 
 Ejercicio02/
 │
-├── reports.py         # Lógica principal del programa
+├── Ejercicio02.py         # Lógica principal del programa
 └── README.md         # Este archivo
 
 ---

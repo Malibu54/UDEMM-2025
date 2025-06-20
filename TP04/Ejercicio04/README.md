@@ -1,4 +1,3 @@
-
 # 📊 Sistema de Clasificación y Top 10 de Ventas
 
 Este proyecto en Python implementa un sistema orientado a objetos para clasificar registros de ventas almacenados en una tabla de dimensiones `N x M`, y obtener el **Top 10 de ventas con mayor valor**.
@@ -38,7 +37,7 @@ Cada fila se asigna a una lista según la **cantidad de ventas (columnas)** que 
 3. Ejecuta el archivo principal:
 
 ```bash
-python top-ten.py
+python Ejercicio04.py
 ```
 Puedes modificar los valores de `N` (filas) y `M` (ventas por fila) en el bloque `if __name__ == "__main__"` para probar distintas configuraciones.
 
@@ -52,7 +51,6 @@ Venta(ID: 45, Valor: 998.23, Fecha: 2025-06-20)
 Venta(ID: 12, Valor: 985.75, Fecha: 2025-06-20)
 ...
 ```
-
 ---
 
 ## 📚 Dependencias Permitidas
@@ -67,7 +65,7 @@ Venta(ID: 12, Valor: 985.75, Fecha: 2025-06-20)
 
 Ejercicio04/
 │
-├── top-ten.py         # Lógica principal del programa
+├── Ejercicio04.py         # Lógica principal del programa
 └── README.md          # Este archivo
 
 ---
@@ -76,4 +74,3 @@ Ejercicio04/
 
 MIT License © 2025 — Oriana Galíndez 🎓 Universidad de la Marina Mercante
 Este proyecto fue desarrollado con fines educativos como parte de un trabajo práctico.
-

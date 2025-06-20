@@ -5,7 +5,7 @@
 
 Este proyecto implementa un módulo de manejo de matrices utilizando **Programación Orientada a Objetos (OOP)** en Python puro, cumpliendo con una serie de requerimientos académicos o de práctica profesional.
 
-📦 **Nombre del módulo:** `scratch.py`  
+📦 **Nombre del módulo:** `Ejercicio01.py`  
 📁 **Clase principal:** `Matriz`
 
 ---
@@ -28,26 +28,12 @@ Este proyecto implementa un módulo de manejo de matrices utilizando **Programac
 
 ---
 
-## 📦 Instalación y uso
-
-No se requiere instalación externa. Solo asegurate de tener Python 3.x.
-
-```bash
-git clone https://github.com/tu_usuario/tu_repo.git
-cd tu_repo
-python scratch.py
-````
-
----
-
-
-
 ## 🏗️ Estructura del Proyecto
 
 
 Ejercicio01/
 │
-├── scratch.py         # Lógica principal del programa
+├── Ejercicio01.py         # Lógica principal del programa
 ├── matriz_data.json   # Archivo de persistencia automática
 └── README.md          # Este archivo
 

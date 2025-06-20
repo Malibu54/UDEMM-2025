@@ -87,8 +87,6 @@ Cada ejercicio está contenido en una subcarpeta individual que incluye:
 
 * `README.md`: Enunciado y/o explicación del ejercicio
 
----
-Muy buena observación. Las instrucciones actuales están **cerca**, pero no se ajustan del todo a cómo está organizado tu repositorio (ya que cada archivo `.py` está en una subcarpeta específica). Vamos a corregirlas y dejarlas más claras para que cualquier usuario pueda seguirlas sin problemas.
 
 ---
 

@@ -87,7 +87,6 @@ Cada ejercicio está contenido en una subcarpeta individual que incluye:
 
 * `README.md`: Enunciado y/o explicación del ejercicio
 
-
 ---
 
 ## 🚀 Instrucciones de Uso

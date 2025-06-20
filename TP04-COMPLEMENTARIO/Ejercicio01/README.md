@@ -8,7 +8,7 @@ Ejercicio06/
 │
 ├── matriz-identidad.py         # Lógica principal del programa
 └── README.md         # Este archivo
-
+```
 
 ---
 

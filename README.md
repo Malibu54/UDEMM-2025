@@ -88,6 +88,36 @@ Cada ejercicio está contenido en una subcarpeta individual que incluye:
 * `README.md`: Enunciado y/o explicación del ejercicio
 
 ---
+Muy buena observación. Las instrucciones actuales están **cerca**, pero no se ajustan del todo a cómo está organizado tu repositorio (ya que cada archivo `.py` está en una subcarpeta específica). Vamos a corregirlas y dejarlas más claras para que cualquier usuario pueda seguirlas sin problemas.
+
+---
+
+### ✅ Versión mejorada y adaptada a tu estructura:
+
+## 🚀 Instrucciones de Uso
+
+1. Cloná este repositorio o descargalo como archivo ZIP:
+
+   ```bash
+   git clone https://github.com/Malibu54/UDEMM-2025.git
+   ```
+
+2. Navegá a la carpeta del ejercicio que quieras ejecutar. Por ejemplo:
+
+   ```bash
+   cd TP03/Ejercicio01
+   ```
+
+3. Ejecutá el script de Python correspondiente:
+
+   ```bash
+   python3 Ejercicio01.py
+   ```
+
+> 📌 Asegurate de tener **Python 3** instalado.
+> 📂 Cada carpeta de ejercicio incluye su propio archivo `.py` y un `README.md` con la descripción o el enunciado del ejercicio.
+
+---
 
 ## 📌 Notas
 

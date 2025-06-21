@@ -1,193 +1,106 @@
 # UdeMM - Licenciatura en Administración de Sistemas (FAE) 
 
-Trabajo práctico número 
-4 del primer cuatrimestre del año 2025.
+Trabajo práctico número 04 del primer cuatrimestre del año 2025.
 Los siguientes proyectos fueron desarrollados en Visual Studio Code con lenguaje **Python 3**
 
-# Ejercicio 1 - 
+# Ejercicio 1 - Módulo de Matrices
 
-Este proyecto en Python genera una visualización numérica basada en un número entero N ingresado por el usuario. La salida consiste en una serie de líneas que combinan asteriscos (*) y números en orden descendente, siguiendo un patrón específico.
+Este proyecto implementa un módulo de manejo de matrices utilizando **Programación Orientada a Objetos (OOP)** en Python puro, cumpliendo con una serie de requerimientos académicos o de práctica profesional.
 
-## Requisitos
+# Ejercicio 2 - Reporte de Paquetes de Red
 
-Usar Python 3.10 o superior si es posible, ya que:
+Este proyecto implementa un sistema de procesamiento y generación de reportes para una empresa de mensajería. La solución procesa más de 100,000 paquetes de red diarios, almacenando, consultando y exportando datos clave sobre los mismos.
 
-* Tiene mejor rendimiento.
-* Incluye mejoras en mensajes de error.
-* Es compatible con las últimas herramientas de desarrollo.
+# Ejercicio 3 - Sistema de Procesamiento de Pedidos – Empresa de Logística
 
-## 🔍 Cómo verificar tu versión de Python
-En una terminal o consola, escribí:
+El sistema permite clasificar, enviar y contabilizar registros según su tipo: **Entrega**, **Control de Calidad**, **Auditoría** o **NN (no clasificado)**.
 
-```bash
-python --version
+# Ejercicio 4 - Sistema de Clasificación y Top 10 de Ventas
+
+Este proyecto en Python implementa un sistema orientado a objetos para clasificar registros de ventas almacenados en una tabla de dimensiones `N x M`, y obtener el **Top 10 de ventas con mayor valor**.
+
+# Ejercicio 5 - Árbol Binario de Búsqueda con Persistencia en Disco
+
+Este proyecto implementa un **Árbol Binario de Búsqueda (BST)** en Python usando **Programación Orientada a Objetos (OOP)**. Además, incluye funcionalidades para **persistir el árbol a disco** utilizando `pickle`.
+
+# Ejercicio 6 - Generador de Matriz Identidad en Python (POO)
+
+Este proyecto implementa un generador de **matrices identidad** utilizando **Programación Orientada a Objetos (POO)** en Python. Se hace uso de clases abstractas para definir una interfaz base para las matrices, y una clase concreta que construye la matriz identidad de tamaño `n x n`.
+
+---
+
+## 📁 Estructura del Repositorio
+
+```plaintext
+├── TP04/
+│ ├── Ejercicio01/
+│ │ ├── Ejercicio01.py
+│ │ └── README.md
+│ └── Ejercicio02/
+│ │ ├── Ejercicio02.py
+│ │ └── README.md
+│ └── Ejercicio03/
+│ │ ├── Ejercicio03.py
+│ │ └── README.md
+│ └── Ejercicio04/
+│ │ ├── Ejercicio04.py
+│ │ └── README.md
+│ └── Ejercicio05/
+│ │ ├── Ejercicio05.py
+│ │ └── README.md
+│ └── Ejercicio06/
+│ │ ├── Ejercicio06.py
+│ │ └── README.md
+├── README.md
 ```
+---
+## 🧱 Estructura de cada ejercicio
 
-o si estás usando python3:
+Cada ejercicio está contenido en una subcarpeta individual que incluye:
 
-```bash
-python3 --version
-```
+* `EjercicioXX.py`: Código fuente del ejercicio
 
-## Instrucciones de Uso
+* `README.md`: Enunciado y/o explicación del ejercicio
 
-1. Clona este repositorio o descarga el archivo `Ejercicio1.py`.
-2. Abrí una terminal o consola de comandos.
-3. Ejecuta el script con el siguiente comando: `python3 Ejercicio1.py`.
-4. Ingresa un número entre 6 y 19 cuando se te solicite.
+---
 
+## 🚀 Instrucciones de Uso
 
-## Reglas de Validación
+1. Cloná este repositorio o descargalo como archivo ZIP:
 
-- El número ingresado debe ser un **número entero**.
-- El número debe estar en el **rango estricto de 6 a 19** (es decir, `N > 5` y `N < 20`).
-- Si el valor ingresado **no es un número entero**, se mostrará un mensaje de error.
-- Si el número está **fuera del rango permitido**, también se mostrará un mensaje indicando el error.
+   ```bash
+   git clone https://github.com/Malibu54/UDEMM-2025.git
+   ```
 
-## Ejemplo de Ejecución
+2. Navegá a la carpeta del ejercicio que quieras ejecutar. Por ejemplo:
 
-```
-Ingresa un número mayor que 5 y menor que 20: 7
-7654321
-*654321
-**54321
-***4321
-****321
-*****21
-******1
-```
+   ```bash
+   cd TP03/Ejercicio01
+   ```
 
-**Ingrese un número mayor que 5 y menor que 20: 4**  
-**El número debe ser mayor que 5 y menor que 20.**
+3. Ejecutá el script de Python correspondiente:
 
-**Ingrese un número mayor que 5 y menor que 20: hola**  
-**Por favor, ingresa un número entero válido.**
+   ```bash
+   python3 Ejercicio01.py
+   ```
 
+> 📌 Asegurate de tener **Python 3** instalado.
+> 📂 Cada carpeta de ejercicio incluye su propio archivo `.py` y un `README.md` con la descripción o el enunciado del ejercicio.
 
-# Ejercicio 2 
+---
 
-Este proyecto en Python permite ingresar una cadena de texto y obtener una lista de sus caracteres en orden inverso, junto con la cantidad total de caracteres. Todo esto se realiza sin utilizar funciones ni librerías externas, como reversed(), len(), list(), etc.
+## 📌 Notas
 
-## Requisitos
-Usar Python 3.10 o superior si es posible, ya que:
+* Todos los ejercicios están resueltos con fines educativos.
 
-* Tiene mejor rendimiento.
-* Incluye mejoras en mensajes de error.
-* Es compatible con las últimas herramientas de desarrollo.
+* El código está comentado para facilitar su comprensión.
 
-## 🔍 Cómo verificar tu versión de Python
-En una terminal o consola, escribí:
+* Se mantiene un formato consistente para nombres de archivos (`Ejercicio01.py`, `Ejercicio02.py`, etc.)
 
-``` bash
-python --version
-```
-
-o si estás usando python3:
-
-```bash
-python3 --version
-```
-
-## Instrucciones de Uso
-
-1. Cloná este repositorio o descargá el archivo `Ejercicio2.py`.
-2. Abrí una terminal o consola de comandos.
-3. Ejecuta el script con el siguiente comando: `python3 Ejercicio1.py`.
-
-El programa procesará la cadena definida en el código y mostrará el resultado.
-
-## Funcionalidad
-El script realiza lo siguiente:
-
-1. Recorre una cadena de texto desde el último carácter al primero.
-2. Guarda cada carácter en una lista.
-3. Cuenta manualmente la cantidad total de caracteres.
-4. Devuelve un diccionario con la lista invertida (items) y el total (length).
-
-## Ejemplo de Ejecución
-
-Para la cadena:
-
-``` python
-"la argentina es enorme"
-``` 
-
-La salida será:
-
-``` python
-{
-    'items': ['e', 'm', 'r', 'o', 'n', 'e', ' ', 's', 'e', ' ', 'a', 'n', 'i', 't', 'n', 'e', 'g', 'r', 'a', ' ', 'a', 'l'],
-    'length': 22
-} 
-```
-
-# Ejercicio 3 - 
-
-Este programa en Python permite codificar una cadena de texto convirtiendo cada carácter en su representación numérica y también decodificarla para obtener nuevamente el texto original.
-
-## Descripción
-
-El programa ofrece dos funciones principales:
-
-- `encode(texto)`: Convierte cada carácter de un texto en su valor numérico utilizando la función `ord`, y los separa por comas.
-- `decode(codificado)`: Convierte una secuencia de números separados por comas en el texto original, utilizando la función `chr`.
-
-Este sistema puede ser útil para representar texto de forma numérica, realizar transformaciones básicas o para comprender mejor la relación entre caracteres y sus códigos Unicode.
-
-## Requisitos
-
-- Python 3.x
-
-## Instalación
-
-No se requiere instalación de bibliotecas externas. Solo necesitas tener Python instalado en tu sistema.
-
-### Ejemplo de Ejecución
-
-1. Ejecuta el programa desde la terminal:
-
-```bash
-$ python3 codificador.py
-```
-
-2. El programa mostrará el texto original, su versión codificada y el texto decodificado.
-
-## Ejemplo
-
-```text
-Texto original: este es un ejemplo
-Texto codificado: 101,115,116,101,32,101,115,32,117,110,32,101,106,101,109,112,108,111
-Texto decodificado: este es un ejemplo
-```
-
-# Ejercicio 5 - 
-
-Este proyecto consiste en un programa en Python para realizar pruebas A/B en la publicidad de una marca de zapatillas. Permite ingresar datos como la cantidad de clicks y espectadores involucrados en dos tipos de publicidad, calcular estadísticas relevantes y realizar pruebas estadísticas.
-
-## Requisitos
-
-- Python 3.x instalado en tu sistema.
-
-## Instalación
-
-No se requiere instalación adicional.
-
-## Uso
-
-1. Ejecuta el archivo `Ejercicio5.py` en la terminal.
-
-````
-python3 Ejercicio5.py
-````
-
-2. Sigue las instrucciones para ingresar los datos de cada prueba A/B.
-3. El programa calculará automáticamente los máximos y mínimos valores, así como las estadísticas necesarias.
-4. Al finalizar, se mostrarán los resultados en pantalla, incluyendo el test estadístico realizado.
+---
 
 
-### Autora: [Oriana Galíndez]
+## 📄 Licencia
 
-
-## Licencia
-
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/) © 2025 — Oriana Galíndez 🎓 Universidad de la Marina Mercante
+Este proyecto fue desarrollado con fines educativos como parte de un trabajo práctico.

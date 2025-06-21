@@ -1,7 +1,7 @@
 
 
 
-# 🧮 Módulo de Matrices en Python
+# 🧮 Módulo de Matrices
 
 Este proyecto implementa un módulo de manejo de matrices utilizando **Programación Orientada a Objetos (OOP)** en Python puro, cumpliendo con una serie de requerimientos académicos o de práctica profesional.
 
@@ -43,6 +43,3 @@ Ejercicio01/
 
 MIT License © 2025 — Oriana Galíndez 🎓 Universidad de la Marina Mercante
 Este proyecto fue desarrollado con fines educativos como parte de un trabajo práctico.
-
-
-

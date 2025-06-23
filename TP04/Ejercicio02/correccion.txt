@@ -1,0 +1,16 @@
+# REPASAR ESTA PARTE - BUILDINIT ALGUNAS SE VAN A UTILIZAR EN EL PARCIAL Y OTRAS NO
+        while True:
+            registro = next(paquetes)
+            if not registro:
+                break
+
+            paquete = Paquete(*registro)
+            self.base_datos.agregar(paquete)
+            self.total_duracion += paquete.duracion
+
+            # Contabilizamos frecuencia por IP
+            self.frecuencia_ips[paquete.ip] = self.frecuencia_ips.get(paquete.ip, 0) + paquete.frecuencia
+
+            # Guardamos la menor duración por IP
+            if paquete.ip not in self.duracion_ips or paquete.duracion < self.duracion_ips[paquete.ip]:
+                self.duracion_ips[paquete.ip] = paquete.duracion

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "usuario": "admin",
+    "password": "admin123",
+    "edad": 40,
+    "ocupacion": "Administrador",
+    "genero": "M",
+    "rol": "admin"
+  },
+  {
+    "id": 2,
+    "usuario": "maria98",
+    "password": "1234",
+    "edad": 25,
+    "ocupacion": "Estudiante",
+    "genero": "F",
+    "rol": "usuario"
+  },
+  {
+    "id": 3,
+    "usuario": "juan_89",
+    "password": "abcd",
+    "edad": 34,
+    "ocupacion": "Profesor",
+    "genero": "M",
+    "rol": "usuario"
+  },
+  {
+    "id": 4,
+    "usuario": "luciag",
+    "password": "pass2024",
+    "edad": 28,
+    "ocupacion": "Ingeniera",
+    "genero": "F",
+    "rol": "usuario"
+  },
+  {
+    "id": 5,
+    "usuario": "test_user",
+    "password": "test",
+    "edad": 19,
+    "ocupacion": "Tester",
+    "genero": "M",
+    "rol": "usuario"
+  }
+]

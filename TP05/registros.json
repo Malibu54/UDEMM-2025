@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "id_pelicula": 1,
+    "popularidad": 9.2,
+    "votos": 4500,
+    "promedio_votos": 4.8,
+    "ranking": 1,
+    "fecha_actualizacion": "2025-06-20"
+  },
+  {
+    "id": 2,
+    "id_pelicula": 2,
+    "popularidad": 8.7,
+    "votos": 3800,
+    "promedio_votos": 4.6,
+    "ranking": 2,
+    "fecha_actualizacion": "2025-06-21"
+  },
+  {
+    "id": 3,
+    "id_pelicula": 3,
+    "popularidad": 8.9,
+    "votos": 5000,
+    "promedio_votos": 4.7,
+    "ranking": 3,
+    "fecha_actualizacion": "2025-06-22"
+  },
+  {
+    "id": 4,
+    "id_pelicula": 4,
+    "popularidad": 9.0,
+    "votos": 4700,
+    "promedio_votos": 4.75,
+    "ranking": 4,
+    "fecha_actualizacion": "2025-06-22"
+  },
+  {
+    "id": 5,
+    "id_pelicula": 5,
+    "popularidad": 8.5,
+    "votos": 3600,
+    "promedio_votos": 4.5,
+    "ranking": 5,
+    "fecha_actualizacion": "2025-06-23"
+  }
+]

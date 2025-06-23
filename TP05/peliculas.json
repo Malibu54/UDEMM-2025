@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "titulo": "Matrix",
+    "genero": "Ciencia ficción",
+    "descripcion": "Un hacker descubre la realidad virtual.",
+    "fecha": "1999-03-31",
+    "duracion": 136
+  },
+  {
+    "id": 2,
+    "titulo": "El Padrino",
+    "genero": "Drama",
+    "descripcion": "La historia de una familia mafiosa.",
+    "fecha": "1972-03-24",
+    "duracion": 175
+  },
+  {
+    "id": 3,
+    "titulo": "Interestelar",
+    "genero": "Ciencia ficción",
+    "descripcion": "Viajes espaciales y dimensiones del tiempo.",
+    "fecha": "2014-11-07",
+    "duracion": 169
+  },
+  {
+    "id": 4,
+    "titulo": "Inception",
+    "genero": "Acción",
+    "descripcion": "Un ladrón entra en los sueños de las personas.",
+    "fecha": "2010-07-16",
+    "duracion": 148
+  },
+  {
+    "id": 5,
+    "titulo": "Parasite",
+    "genero": "Thriller",
+    "descripcion": "Una familia pobre se infiltra en una familia rica.",
+    "fecha": "2019-05-30",
+    "duracion": 132
+  }
+]

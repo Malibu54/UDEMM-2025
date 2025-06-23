@@ -1,6 +1,6 @@
 # UdeMM - Licenciatura en Administración de Sistemas (FAE) 
 
-Trabajo práctico número 05 ¡Perfecto! Aquí te dejo un README con emojis y comentarios más amigables, reflejando el propósito del proyecto según el enunciado que me pasaste:
+Trabajo práctico número 05
 
 
 ## 🎬 Sistema de Gestión de Películas

@@ -1,0 +1,25 @@
+# Archivos de logs
+*.log
+*.out
+*.tmp
+
+# Archivos de bases de datos locales
+*.sqlite
+*.db
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Observaciones
+*.correcciones.txt
+
+
+# Archivos de entorno
+.env
+.env.local
+
+# Archivos de configuración del editor
+.vscode/
+.idea/
+*.sublime-project

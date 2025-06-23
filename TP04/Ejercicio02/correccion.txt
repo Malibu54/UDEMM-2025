@@ -1,4 +1,6 @@
 # REPASAR ESTA PARTE - BUILDINIT ALGUNAS SE VAN A UTILIZAR EN EL PARCIAL Y OTRAS NO
+
+
         while True:
             registro = next(paquetes)
             if not registro:
@@ -14,3 +16,4 @@
             # Guardamos la menor duración por IP
             if paquete.ip not in self.duracion_ips or paquete.duracion < self.duracion_ips[paquete.ip]:
                 self.duracion_ips[paquete.ip] = paquete.duracion
+

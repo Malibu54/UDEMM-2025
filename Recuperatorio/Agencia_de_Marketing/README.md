@@ -1,6 +1,6 @@
 # Sistema de Gestión de Agencia de Marketing
 
-Este proyecto implementa un sistema de gestión para una agencia de marketing, modelado bajo los principios de la Programación Orientada a Objetos (POO) en Python. El sistema maneja clientes, vendedores, técnicos, proyectos, asignaciones y diferentes tipos de publicidad y métodos de pago.
+Este proyecto implementa un sistema de gestión para una agencia de marketing, modelado bajo los principios de la Programación Orientada a Objetos (POO) en Python 3.13.5. El sistema maneja clientes, vendedores, técnicos, proyectos, asignaciones y diferentes tipos de publicidad y métodos de pago.
 
 ## Requisitos
 

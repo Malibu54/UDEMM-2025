@@ -16,6 +16,6 @@ Se mostrará por consola el funcionamiento del algoritmo.
 
 ## Diagrama de Clases
 
-> <p>
+<p>
   <img src="/assets/DIAGRAMA-CLASES.png" />
 </p>

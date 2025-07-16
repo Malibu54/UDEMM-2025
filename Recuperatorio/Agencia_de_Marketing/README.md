@@ -13,3 +13,9 @@ Este proyecto implementa un sistema de gestión para una agencia de marketing, m
 3. Ejecuta el programa con el comando `python3 main.py`.
 
 Se mostrará por consola el funcionamiento del algoritmo.
+
+## Diagrama de Clases
+
+> <p align="center">
+  <img src="/DIAGRAMA-CLASES.png" />
+</p>

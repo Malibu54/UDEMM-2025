@@ -8,9 +8,9 @@ Este proyecto implementa un sistema de gestión para una agencia de marketing, m
 
 ## Instrucciones de Uso
 
-1. Clona este repositorio o descarga el archivo `main.py`.
+1. Clonar este repositorio o descarga el archivo `main.py`.
 2. Abrir una terminal y navega hasta la ubicación del archivo `main.py`.
-3. Ejecuta el programa con el comando `python3 main.py`.
+3. Ejecutar el programa con el comando `python3 main.py`.
 
 Se mostrará por consola el funcionamiento del algoritmo.
 

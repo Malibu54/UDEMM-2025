@@ -9,7 +9,7 @@ from enum import Enum
 class Persona(ABC):
     """
     Clase base abstracta para entidades que comparten información personal común.
-    Promueve la reutilización de código y asegura la consistencia.
+
     """
     def __init__(self, dni: str, codigo: str, nombre: str, direccion: str, telefono: str):
         if not all([dni, codigo, nombre, direccion, telefono]):

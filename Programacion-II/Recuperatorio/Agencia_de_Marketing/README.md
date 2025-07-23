@@ -10,6 +10,7 @@ Este proyecto implementa un sistema de gestión para una agencia de marketing, m
 
 Se mostrará por consola el funcionamiento del algoritmo.
 
+
 ## Diagrama de Clases
 
 <img src="assets/DIAGRAMA-CLASES.png" />

@@ -1,0 +1,37 @@
+#Esto en realidad se refiere a extender el modelo usando los metodos vistos.
+
+https://drive.google.com/file/d/1zCHlFzR-uOwgjkYrYWt0WwlHmhGzLMAd/view
+class ProcesadorNN(Procesador):
+    """
+    Procesador para registros sin tipo reconocido ("NN").
+    Se envía el contenido completo del registro.
+    """
+
+    def name(self):
+        return "NN"
+
+    def preparar_registro(self, registro):
+        """
+        Devuelve el registro completo sin transformación.
+        """
+        return registro
+
+
+
+
+
+# REPASAR ESTA PARTE - BUILDINIT ALGUNAS SE VAN A UTILIZAR EN EL PARCIAL Y OTRAS NO
+
+
+       registros = get_pedidos()
+        while True:
+            registro = next(registros)
+            if not registro:
+                break
+
+            tipo = get_type(registro)
+            procesador = self.procesadores.get(tipo, self.procesador_nn)
+            procesador.send_for_process(registro)
+
+
+

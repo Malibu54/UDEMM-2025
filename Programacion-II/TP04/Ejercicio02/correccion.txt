@@ -1,5 +1,5 @@
 # REPASAR ESTA PARTE - BUILDINIT ALGUNAS SE VAN A UTILIZAR EN EL PARCIAL Y OTRAS NO
-
+https://drive.google.com/file/d/1VOyvop_LnLhG1Mwvb0lIRgEn0gwzIGzv/view  
 
         while True:
             registro = next(paquetes)

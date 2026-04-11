@@ -41,14 +41,15 @@ class PDFDocument(Document):
 
 
 class DOCDocument(Document):
-    def __init__(self, title: str, content: str, tenplate: str ="default"):
+    def __init__(self, title: str, content: str, template: str ="default"):
         super().__init__(title, content)
-        self.template = self.templateself.styles = ["Normal", "Heading1","Heading2"]
+        self.template = template
+        self.styles = ["Normal", "Heading1","Heading2"]
     
     def render (self) -> str:
         return(
              f"[DOC] {self.title}\n"
-            f"Plantillas:{self.template} | Estilos: {', '.jpin(self.styles)}\n"
+            f"Plantillas:{self.template} | Estilos: {', '.join(self.styles)}\n"
             f"Creado {self.created_at}\n"
             f"{'-' * 40}\n {self.content[:200]}\n"
         )
@@ -66,7 +67,7 @@ class TXTDocument(Document):
     def render (self) -> str:
         return(
              f"[TXT] {self.title}\n"
-            f"Enconding:{self.encoding}\n"
+            f"Encoding: {self.encoding}\n"
             f"Creado {self.created_at}\n"
             f"{'-' * 40}\n {self.content[:200]}\n"
         )
@@ -87,8 +88,8 @@ class DocumentCreator(ABC):
 
     def generate_report(self, title: str, content:str, save_path:str = ".") -> None:
         print(f"\n{'='* 50 }")
-        print(f"\Oficina:{self.office}")
-        print(f"\Author:{self.author}")
+        print(f"Office: {self.office}")
+        print(f"Author: {self.author}")
 
         doc: Document = self.create_document(title, content)
 
@@ -105,20 +106,20 @@ class PDFCreator(DocumentCreator):
         return PDFDocument (title, content, compression=self.compression)
     
 class DOCCreator(DocumentCreator):
-    def __init__(self, office:str, author:str, templaye:str = "corporativo"):
+    def __init__(self, office:str, author:str, template:str = "corporativo"):
         super().__init__(office, author)
-        self.template = self.template
+        self.template = template
 
     def create_document(self, title:str, content:str) -> DOCDocument:
-        return DOCDocument(title, content, remplate = self.template)
+        return DOCDocument(title, content, template = self.template)
     
 class TXTCreator(DocumentCreator):
     def __init__(self, office:str, author: str, encoding: str ="utf-8"):
         super().__init__(office, author)
         self.encoding = encoding
 
-def create_document(self, title: str, content:str) -> TXTDocument:
-    return TXTDocument (title, content, encoding = self.encoding)
+    def create_document(self, title: str, content:str) -> TXTDocument:
+        return TXTDocument (title, content, encoding = self.encoding)
 
 
 

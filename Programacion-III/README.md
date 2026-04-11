@@ -1,6 +1,6 @@
 # UdeMM - Licenciatura en Administración de Sistemas (FAE) 
 
-Trabajos prácticos del Segundo Cuatrimestre del año 2025.
+Trabajos prácticos del Primer Cuatrimestre del año 2026.
 Los proyectos fueron desarrollados en Visual Studio Code
 
 ---

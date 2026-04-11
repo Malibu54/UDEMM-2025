@@ -1,5 +1,12 @@
 from abc import ABC, abstractmethod
 
+class Reporte:
+    def __init__(self):
+        self.titulo = " "
+        self.encabezado = " "
+        self.cuerpo = " "
+        self.pie_pagina = " "
+
 class ReporteBuilder (ABC):
 
     @abstractmethod

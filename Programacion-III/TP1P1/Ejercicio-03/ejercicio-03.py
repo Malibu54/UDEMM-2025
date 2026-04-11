@@ -11,13 +11,66 @@ class Document (ABC):
 
     @abstractmethod
     def render(self) -> str:
-        """Devuelve una representacion del documento listo para mostrar."""
         ...
 
     @abstractmethod
     def save(self, path:str) -> None:
-        """Persiste el documento en el disco."""
         ...
     
     def __repr__(self):
         return f"<{self.__class__.__name__} title'{self.title}'>"
+    
+
+class PDFDocument(Document):
+    def __init__(self, title: str, content: str, compression: int = 5):
+        super().__init__(title, content)
+        self.compression = compression
+        self.pages = max (1, len(content) // 500)
+
+    def render(self) -> str:
+        return(
+            f"[PDF] {self.title}\n"
+            f"Paginas:{self.pages} | Compresion: {self.compression}\n"
+            f"Creado {self.created_at}\n"
+            f"{'-' * 40}\n {self.content[:200]}\n"
+        )
+    
+    def save (self, path: str) -> None:
+        filename = f"{path}/{self.title.replace(' ', '_')}.pdf"
+        print(f"GUardado PDF en: {filename}")
+
+
+class DOCDocument(Document):
+    def __init__(self, title: str, content: str, tenplate: str ="default"):
+        super().__init__(title, content)
+        self.template = self.templateself.styles = ["Normal", "Heading1","Heading2"]
+    
+    def render (self) -> str:
+        return(
+             f"[DOC] {self.title}\n"
+            f"Plantillas:{self.template} | Estilos: {', '.jpin(self.styles)}\n"
+            f"Creado {self.created_at}\n"
+            f"{'-' * 40}\n {self.content[:200]}\n"
+        )
+    
+    def save (self, path: str) -> None:
+        filename = f"{path}/{self.title.replace(' ', '_')}.docx"
+        print(f"GUardado DOC en: {filename}")
+
+
+class TXTDocument(Document):
+    def __init__(self, title: str, content: str, encoding: str ="utf-8"):
+        super().__init__(title, content)
+        self.encoding = encoding
+
+    def render (self) -> str:
+        return(
+             f"[TXT] {self.title}\n"
+            f"Enconding:{self.encoding}\n"
+            f"Creado {self.created_at}\n"
+            f"{'-' * 40}\n {self.content[:200]}\n"
+        )
+    
+    def save (self, path: str) -> None:
+        filename = f"{path}/{self.title.replace(' ', '_')}.txt"
+        print(f"GUardado TXT en: {filename}")

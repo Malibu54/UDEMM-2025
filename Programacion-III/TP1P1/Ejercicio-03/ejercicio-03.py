@@ -96,5 +96,29 @@ class DocumentCreator(ABC):
         doc.save(save_path)
         print(f"\n{'='* 50 }\n")
 
+class PDFCreator(DocumentCreator):
+    def __init__(self, office:str, author:str, compression: int=5):
+        super().__init__(office,author)
+        self.compression = compression
+    
+    def create_document(self, title:str, content:str)->PDFDocument:
+        return PDFDocument (title, content, compression=self.compression)
+    
+class DOCCreator(DocumentCreator):
+    def __init__(self, office:str, author:str, templaye:str = "corporativo"):
+        super().__init__(office, author)
+        self.template = self.template
+
+    def create_document(self, title:str, content:str) -> DOCDocument:
+        return DOCDocument(title, content, remplate = self.template)
+    
+class TXTCreator(DocumentCreator):
+    def __init__(self, office:str, author: str, encoding: str ="utf-8"):
+        super().__init__(office, author)
+        self.encoding = encoding
+
+def create_document(self, title: str, content:str) -> TXTDocument:
+    return TXTDocument (title, content, encoding = self.encoding)
+
 
 

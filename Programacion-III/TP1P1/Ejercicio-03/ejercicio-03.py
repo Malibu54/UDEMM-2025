@@ -74,3 +74,27 @@ class TXTDocument(Document):
     def save (self, path: str) -> None:
         filename = f"{path}/{self.title.replace(' ', '_')}.txt"
         print(f"GUardado TXT en: {filename}")
+
+class DocumentCreator(ABC):
+
+    def __init__(self, office: str, author:str):
+        self.office = office
+        self.author = author
+
+    @abstractmethod
+    def create_document(self, title: str, content:str) -> Document:
+        ...
+
+    def generate_report(self, title: str, content:str, save_path:str = ".") -> None:
+        print(f"\n{'='* 50 }")
+        print(f"\Oficina:{self.office}")
+        print(f"\Author:{self.author}")
+
+        doc: Document = self.create_document(title, content)
+
+        print(doc.render())
+        doc.save(save_path)
+        print(f"\n{'='* 50 }\n")
+
+
+

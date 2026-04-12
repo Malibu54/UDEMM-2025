@@ -8,7 +8,7 @@ from typing import Any
 # ─────────────────────────────────────────────
 
 _instances: dict [type, object] = {}
-_lock: threading.Lock = threading.Lock()
+_lock: threading.lock = threading.lock()
 
 def __call__ (cls, *args: Any, **kwargs: Any) -> object:
 
@@ -19,3 +19,19 @@ def __call__ (cls, *args: Any, **kwargs: Any) -> object:
                 instances = super() .__call__(*args, **kwargs)
                 cls._instances [cls] = instances
     return cls._instances[cls]
+
+def reset (cls) -> None:
+
+    with cls._lock():
+        cls._instances.pop(cls, None)
+
+# ─────────────────────────────────────────────
+# 2. ConfigurationManager — la clase singleton
+# ─────────────────────────────────────────────
+
+    def __init__(self) -> None:
+    
+        self._config: dict[str, Any] = {}
+
+# ── Lectura ──────────────────────────────
+

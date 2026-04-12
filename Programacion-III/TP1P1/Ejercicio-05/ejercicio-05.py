@@ -30,8 +30,34 @@ def reset (cls) -> None:
 # ─────────────────────────────────────────────
 
     def __init__(self) -> None:
-    
-        self._config: dict[str, Any] = {}
+        self._config = {}
 
 # ── Lectura ──────────────────────────────
+
+    def get (self, key:str, default: Any = None) -> Any:
+        return self._config.get (key, default)
+    
+    def all (self) -> dict[str, Any]:
+        return dict(self._config)
+    
+# ── Escritura ────────────────────────────
+    def set(self, key: str, value: Any) -> None:
+        if not isinstance (key, str) or not key:
+            raise ValueError("La clave tiene quw  ser in una cadena de caracteres, no puede ser vacio")
+    
+    def delete (self, key:str) -> None:
+        self._config.pop(key, None)
+
+    def load_from_dict(self, data: dict[str, Any]) -> None:
+        for key, value in data.items():
+            self.set(key, value)
+
+# ── Utilidades ───────────────────────────
+
+    def __repr__(self) -> str:
+        return f"ConfigurationManager (entries={len(self._config)})"
+    
+
+
+
 

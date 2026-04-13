@@ -18,3 +18,9 @@ class PaymentGateway (abc.ABC):
 # 2. ADAPTER
 # ─────────────────────────────────────────────
 
+class BancaPayAdapter (PaymentGateway):
+        _CURRENCY_PATTERN = re.compile(
+        r"^(?P<currency>[A-Z]{3}):(?P<rate>[\d.]+):(?P<date>\d{4}-\d{2}-\d{2})$"
+    )
+ 
+ 

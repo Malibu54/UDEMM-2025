@@ -1,1 +1,1 @@
-Seleccione el patron de comportamiento Strategy
+Seleccione el patron de comportamiento Strategy porque define una familia de algoritmos, los encapsula en clases separadas y los hace intercambiables. La clase que los usa (Transaccion) solo conoce la abstraccion(EstrategiaPO), nunca las implementaciones concretas.

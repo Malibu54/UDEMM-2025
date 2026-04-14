@@ -1,0 +1,2 @@
+Templeate Method
+ Este patrón es ideal porque execute() define un flujo fijo e inamovible, mientras que apply_filter() obliga a cada subclase a implementar su propio filtro. Los hooks pre_process() y post_process() permiten insertar pasos opcionales sin alterar el algoritmo central, y agregar un nuevo filtro solo requiere crear una subclase nueva sin tocar la lógica de control existente.

@@ -1,2 +1,2 @@
-Patron: Strate
-
+Patron: State
+La máquina expendedora tiene un comportamiento que depende completamente de su estado interno. Sin el patrón State, la alternativa sería un único objeto con una variable estado: str y bloques if/elif en cada método — lo que haría imposible razonar sobre el código a medida que crece. State resuelve esto convirtiéndo cada estado en una clase propia.

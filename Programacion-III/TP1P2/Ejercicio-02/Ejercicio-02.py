@@ -91,3 +91,90 @@ class CodecFactory:
             return cls._registry[key]()
         
 
+        @classmethod
+        def available(cls) -> list[str]:
+            return list(cls._registry.keys())
+ 
+ 
+# ─────────────────────────────────────────────
+#  BRIDGE – Abstracción de entrega de streaming
+# ─────────────────────────────────────────────
+
+class StreamingDelivery(ABC):
+    def __init__(self, codec: VideoCodec) -> None:
+        self._codec = codec
+ 
+    def set_codec(self, codec: VideoCodec) -> None:
+       
+        print(f"  Codec switched → {codec.name}")
+        self._codec = codec
+
+    # Template Method: fuerza el orden correcto open→encode→close
+    def stream(self, path: str) -> bytes:
+        handle = self._open(path)
+        try:
+            raw = self._read(handle)
+            encoded = self._codec.encode(raw)
+            return encoded
+        finally:
+            self._close(handle)
+ 
+    # ── Operaciones de I/O que cada subclase implementa ──
+ 
+    @abstractmethod
+    def _open(self, path: str) -> BinaryIO:
+        ...
+
+    @abstractmethod
+    def _read(self, handle: BinaryIO) -> bytes:
+        ...
+ 
+    @abstractmethod
+    def _close(self, handle: BinaryIO) -> None:
+        ...  
+class LiveStreamDelivery(StreamingDelivery):
+ 
+    def _open(self, path: str) -> BinaryIO:
+        print(f"  [Live] Opening live source: {path}")
+        return open(path, "rb")
+ 
+    def _read(self, handle: BinaryIO) -> bytes:
+        data = handle.read()
+        print(f"  [Live] Read {len(data)} bytes from live source")
+        return data
+ 
+    def _close(self, handle: BinaryIO) -> None:
+        handle.close()
+        print("  [Live] Live source closed")
+
+class VodDelivery(StreamingDelivery):
+ 
+    def _open(self, path: str) -> BinaryIO:
+        print(f"  [VoD]  Opening VoD file: {path}")
+        return open(path, "rb")
+ 
+    def _read(self, handle: BinaryIO) -> bytes:
+        data = handle.read()
+        print(f"  [VoD]  Read {len(data)} bytes (buffered)")
+        return data
+ 
+    def _close(self, handle: BinaryIO) -> None:
+        handle.close()
+        print("  [VoD]  VoD file closed")
+
+# ─────────────────────────────────────────────
+#  CLIENTE
+# ─────────────────────────────────────────────
+ 
+class StreamingClient:
+        def __init__(self, delivery: StreamingDelivery) -> None:
+            self._delivery = delivery
+ 
+        def play(self, path: str, codec_name: str = "h264") -> bytes:
+            codec = CodecFactory.create(codec_name)
+            self._delivery.set_codec(codec)
+            print(f"\n▶ Streaming '{path}' with {codec.name}")
+            return self._delivery.stream(path)
+ 
+        def switch_codec(self, name: str) -> None:
+            self._delivery.set_codec(CodecFactory.create(name))

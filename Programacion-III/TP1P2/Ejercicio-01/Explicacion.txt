@@ -1,0 +1,1 @@
+Seleccione el patron de comportamiento Strategy

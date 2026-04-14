@@ -1,0 +1,1 @@
+El patrón Template Method se eligió porque el algoritmo tiene una estructura fija con pasos que varían según el tipo de reporte. La migración fue directa: generate() se convirtió en el template y los pasos del legacy en métodos abstractos que cada subclase implementa a su manera.

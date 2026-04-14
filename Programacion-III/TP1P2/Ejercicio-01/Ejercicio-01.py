@@ -1,2 +1,2 @@
-from abc import ABC, asbtractmethod
+from abc import ABC, abstractmethod
 

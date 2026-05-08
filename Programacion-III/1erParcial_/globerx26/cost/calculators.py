@@ -111,7 +111,7 @@ class EuropeCostCalculator(CostCalculator):
         return "Europa"
 
     def regional_factor(self) -> float:
-        return 0.26
+        return 0.27
 
 
 # ──────────────────────────────────────────────────────────────────────────────

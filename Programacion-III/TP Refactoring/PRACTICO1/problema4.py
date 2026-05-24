@@ -9,14 +9,13 @@ class EstadoProducto(ABC):
     def nombre(self) -> str:
         pass
 
-
 class Fabricacion(EstadoProducto):
     def get_costo(self, precio: float) -> float:
         return 0.0
 
     def nombre(self) -> str:
         return "fabricacion"
-
+    
 class Ready(EstadoProducto):
     def get_costo(self, precio: float) -> float:
         return precio
@@ -149,10 +148,8 @@ class Gestion:
     def get_costo_total(self) -> float:
         return sum(c.get_costo() for c in self._contenedores)
 
-
 class Problema4:
     pass
-
 
 #Test
 

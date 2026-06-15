@@ -1,17 +1,14 @@
-from services.filtros.filtro_strategy import (
-    FiltroStrategy
-)
+from services.filtros.filtro_strategy import FiltroStrategy
 
-
-class FiltroVisibilidad(FiltroStrategy):
+class FiltroEstado(FiltroStrategy):
 
     def __init__(self, visibilidad):
-        self.visibilidad = visibilidad
+        self.estado = visibilidad
 
     def aplicar(self, notas):
 
         return [
             nota
             for nota in notas
-            if nota.visibilidad == self.visibilidad
+            if nota.estado == self.estado
         ]

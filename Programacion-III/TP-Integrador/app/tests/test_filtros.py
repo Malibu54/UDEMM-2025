@@ -1,8 +1,6 @@
 import unittest
 
-from services.filtros.filtro_categoria import (
-    FiltroCategoria
-)
+from services.filtros.filtro_categoria import FiltroCategoria
 
 
 class TestFiltros(unittest.TestCase):

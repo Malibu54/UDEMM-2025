@@ -1,8 +1,6 @@
 import unittest
 
-from services.nota_service import (
-    NotaService
-)
+from services.nota_service import NotaService
 
 
 class FakeRepository:

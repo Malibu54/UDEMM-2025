@@ -1,7 +1,7 @@
-from services.ordenamiento import ordenamiento_strategy
+from services.ordenamiento import OrdenamientoStrategy
 
 class OrdenarFechaAsc(
-    ordenamiento_strategy
+    OrdenamientoStrategy
 ):
 
     def ordenar(self, notas):

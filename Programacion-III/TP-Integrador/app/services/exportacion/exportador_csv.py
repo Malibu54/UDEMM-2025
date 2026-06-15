@@ -1,8 +1,6 @@
 import csv
 
-from services.exportacion.exportador import (
-    Exportador
-)
+from services.exportacion.exportador import Exportador
 
 
 class ExportadorCSV(

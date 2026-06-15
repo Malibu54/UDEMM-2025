@@ -1,5 +1,4 @@
-from dtos import usuario_dto
-
+from dtos.usuario_dto import UsuarioDTO
 
 class UsuarioController:
 
@@ -18,7 +17,7 @@ class UsuarioController:
             usuario
         )
 
-        return usuario_dto.from_usuario(
+        return UsuarioDTO.from_usuario(
             usuario
         )
 
@@ -27,6 +26,6 @@ class UsuarioController:
         usuarios = self.repository.obtener_todos()
 
         return [
-            usuario_dto.from_usuario(u)
+            UsuarioDTO.from_usuario(u)
             for u in usuarios
         ]

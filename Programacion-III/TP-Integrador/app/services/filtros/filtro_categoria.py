@@ -1,6 +1,4 @@
-from services.filtros.filtro_strategy import (
-    FiltroStrategy
-)
+from services.filtros.filtro_strategy import FiltroStrategy
 
 
 class FiltroCategoria(FiltroStrategy):

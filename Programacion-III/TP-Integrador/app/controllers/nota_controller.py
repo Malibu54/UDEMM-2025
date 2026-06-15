@@ -1,3 +1,5 @@
+from dtos import nota_dto
+
 class NotaController:
 
     def __init__(
@@ -15,6 +17,6 @@ class NotaController:
             nota
         )
 
-        return NotaDTO.from_nota(
+        return nota_dto.from_nota(
             nota
         )

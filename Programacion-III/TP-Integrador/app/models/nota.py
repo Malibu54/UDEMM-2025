@@ -1,6 +1,5 @@
 from datetime import datetime
 
-
 class Nota:
 
     def __init__(
@@ -9,12 +8,16 @@ class Nota:
         contenido,
         categoria,
         visibilidad,
+        fecha_publicacion,
+        hora_publicacion,
         autor
     ):
         self.titulo = titulo
         self.contenido = contenido
         self.categoria = categoria
         self.visibilidad = visibilidad
+        self.fecha_publicacion = fecha_publicacion
+        self.hora_publicacion = hora_publicacion
         self.autor = autor
 
         self.fecha_publicacion = datetime.now()

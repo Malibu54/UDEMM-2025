@@ -10,7 +10,6 @@ from controllers.nota_controller import (
     NotaController
 )
 
-
 repo = SQLiteNotaRepository()
 
 controller = NotaController(

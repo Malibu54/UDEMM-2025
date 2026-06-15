@@ -4,7 +4,6 @@ from repositories.nota_repository import (
     NotaRepository
 )
 
-
 class OracleNotaRepository(
     NotaRepository
 ):

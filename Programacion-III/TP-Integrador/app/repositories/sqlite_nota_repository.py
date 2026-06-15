@@ -23,7 +23,10 @@ class SQLiteNotaRepository(NotaRepository):
                 titulo,
                 contenido,
                 categoria,
-                visibilidad
+                visibilidad,
+                fecha,
+                hora,
+                autor
             )
             VALUES
             (?, ?, ?, ?)
@@ -32,7 +35,10 @@ class SQLiteNotaRepository(NotaRepository):
                 nota.titulo,
                 nota.contenido,
                 nota.categoria,
-                nota.visibilidad
+                nota.visibilidad,
+                nota.fecha,
+                nota.hora,
+                nota.autor
             )
         )
 

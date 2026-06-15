@@ -1,6 +1,4 @@
-from services.notificaciones.observer import (
-    Observer
-)
+from services.notificaciones.observer import Observer
 
 
 class EmailObserver(Observer):

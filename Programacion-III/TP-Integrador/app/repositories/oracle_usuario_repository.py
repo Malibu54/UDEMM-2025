@@ -1,3 +1,4 @@
+'''
 import oracledb
 
 from repositories.usuario_repository import (
@@ -89,3 +90,4 @@ class OracleUsuarioRepository(
         )
 
         return cursor.fetchall()
+        '''

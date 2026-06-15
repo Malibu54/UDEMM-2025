@@ -1,6 +1,5 @@
 from abc import ABC
 
-
 class Usuario(ABC):
 
     def __init__(

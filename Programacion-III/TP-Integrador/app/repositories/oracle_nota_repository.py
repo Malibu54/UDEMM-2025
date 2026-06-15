@@ -1,4 +1,4 @@
-import oracledb
+''' import oracledb
 
 from repositories.nota_repository import (
     NotaRepository
@@ -139,4 +139,4 @@ class OracleNotaRepository(
             (id,)
         )
 
-        self.connection.commit()
+        self.connection.commit()'''

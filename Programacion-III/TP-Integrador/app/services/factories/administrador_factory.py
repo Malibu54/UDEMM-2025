@@ -1,6 +1,4 @@
-from models.administrador import (
-    Administrador
-)
+from models.administrador import Administrador
 
 from services.factories.usuario_factory import (
     UsuarioFactory

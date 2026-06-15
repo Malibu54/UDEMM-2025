@@ -1,4 +1,4 @@
-class DatabaseFactory:
+''' class DatabaseFactory:
 
     @staticmethod
     def create_repository(tipo):
@@ -8,3 +8,4 @@ class DatabaseFactory:
 
         if tipo == "oracle":
             return OracleNotaRepository(...)
+            '''

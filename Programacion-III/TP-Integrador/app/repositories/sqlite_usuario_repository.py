@@ -1,7 +1,5 @@
 import sqlite3
-
 from repositories.usuario_repository import UsuarioRepository
-
 
 class SQLiteUsuarioRepository(
     UsuarioRepository

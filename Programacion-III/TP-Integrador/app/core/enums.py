@@ -1,6 +1,5 @@
 from enum import Enum
 
-
 class CategoriaNota(Enum):
 
     RELEVANTE = "RELEVANTE"

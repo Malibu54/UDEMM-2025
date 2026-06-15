@@ -1,8 +1,8 @@
-from services.ordenamiento import ordenamiento_strategy
+from services.ordenamiento import OrdenamientoStrategy
 
 
 class OrdenarCategoria(
-    ordenamiento_strategy
+    OrdenamientoStrategy
 ):
 
     def ordenar(self, notas):

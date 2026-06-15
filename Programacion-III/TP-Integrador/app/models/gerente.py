@@ -1,6 +1,5 @@
 from models.usuario import Usuario
 
-
 class Gerente(Usuario):
 
     def __init__(
@@ -20,7 +19,8 @@ class Gerente(Usuario):
         self.permisos = [
             "ver_ocultas",
             "revisar_notas",
-            "filtrar_notas"
+            "filtrar_notas",
+            "ordenar_notas"
         ]
 
     def revisar_nota(self, nota):

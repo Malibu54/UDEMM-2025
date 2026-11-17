@@ -1,0 +1,116 @@
+PLANTILLA PARA PEDIRLE EL SISTEMA A GEMINI Y COMO ANALICE EL PARCIAL ANTERIOR
+
+
+No se permite el uso de
+
+sorted
+sum
+min
+max
+map
+
+
+Problema a resolver - Mejora sistemas punto de entregas 
+
+Crear Interfaz interactiva con
+
+Menú principal con opciones por rol y sus submenues con sus interfaces y operaciones correspondientes
+Navegación intuitiva entre funcionalidades
+Mensajes informativos y manejo de errores
+
+Mejora sistemas punto de entregas:
+
+Empresa:
+Gerencia de envios
+Locales (ptos de entrega)
+Ordenes (con mejora)
+	Comportamiento actual, agregar como forma de cobro tarjeta de crédito y transferencia bancaria y multicobro.
+	+ de 1 detal
+	Cantidad de Items
+	Cálculo de peso
+	Detalle (descripción, nombre, peso unitario, stock, impuesto, precio individual, estado: activo/inactivo)
+	Fecha
+	Estado #Pausado #En proceso #Finalizdo #Bloqueado
+	Código
+	Duración (en minutos)
+	Calculo total de Precio
+	Cálculo promedio de peso
+	IVA 10% (SOBRE EL TOTAL DE LOS PRECIOS)
+
+Op con las ordenes
+	Cálculo de peso
+	Total del detalle
+	Asignación a usuarios
+Stock
+     Control x existencias 
+
+Informes de las ordenes
+	Top 10 mas pesados
+	Precio
+	
+Direcciones
+Empleados
+	ABM
+
+Usuarios
+	Administrador
+		     Nombre
+	             Apellido
+                     DNI
+                     Dirección
+	             Bloquear ordenes
+	             Totalizar ordenes procesadas
+                     Totalizar items de una orden
+                     Obtener máximos
+                     Obtener mínimos de duración
+	             Obtener top ten de los máximos de duración
+	 Repartidores
+	             Nombre
+	             Apellido
+                     DNI
+                     Dirección  
+		     Ordenes asignadas finalizadas
+                     Actualizar estado de orden
+                     Tipo de vehículo usado para la orden 
+	        Owner
+	             Nombre
+	             Apellido
+                     DNI
+                     Dirección
+	             Obtener dimensiones de cada local
+	             Obtener cantidad de locales a su nombre
+	             Totalizar cantidad de ordenes por estado #En Proceso #Finalizadas
+	             Actualizar estado de ordenes
+	
+Clientes
+	Domicilio
+	DNI
+	Nombre y apellido
+
+
+Operaciones de cobros
+	Totalizadas
+	Alta
+	Bloqueo 
+	Modificación
+
+Formas de cobro	
+	Eftvo 
+	     (SOLO MONTO)
+	TC 
+	  Banco
+	  Fecha
+	  Monto
+	  Estado #Pendiente #En proceso #Autorizado #Rechazado	
+	TB
+	  Monto
+	  Fecha
+	  Estado #Pendiente #En proceso #Autorizado #Rechazado	
+	  Nro de Op
+	ABM
+Vehiculos
+	Moto
+	Bici
+	Camión
+	Auto	
+

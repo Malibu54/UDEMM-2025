@@ -1,0 +1,155 @@
+classDiagram
+    class Autor {
+        -int id
+        -str nombre
+        -str apellido
+        -str afiliacion
+        -bool activo
+        -bool bloqueado
+        -int publicaciones_count
+        -date fecha_registro
+        +activar()
+        +desactivar()
+        +bloquear()
+        +desbloquear()
+        +nombre_completo() str
+        +antiguedad_en_anios(fecha_actual) int
+        +incrementar_publicaciones()
+    }
+
+    class DocumentoCientifico {
+        -int id
+        -str titulo
+        -str resumen
+        -date fecha_publicacion
+        -str path_documento
+        -str nombre_documento
+        -int likes
+        -bool activo
+        -list~Autor~ autores
+        +esta_activo() bool
+        +activar()
+        +desactivar()
+        +agregar_autor(autor)
+        +agregar_autores(autores)
+        +obtener_extension() str
+        +tiene_atributos_completos() bool
+        +sumar_like()
+    }
+
+    class ResultadoProcesamiento {
+        <<DTO>>
+        +int id_documento
+        +str titulo
+        +str resumen
+        +int likes
+        +date fecha_publicacion
+        +list~Autor~ autores
+    }
+
+    class ParserDocumento {
+        <<interface>>
+        +procesar(documento) ResultadoProcesamiento
+    }
+    class ParserPDF {
+        +procesar(documento) ResultadoProcesamiento
+    }
+    class ParserDOC {
+        +procesar(documento) ResultadoProcesamiento
+    }
+    class ParserTXT {
+        +procesar(documento) ResultadoProcesamiento
+    }
+
+    class FabricaParsers {
+        -dict parsers_registrados
+        +registrar(extension, clase_parser)
+        +tipos_soportados() list
+        +obtener_parser(extension) ParserDocumento
+    }
+
+    class Especificacion {
+        <<interface>>
+        +es_satisfecha_por(documento) bool
+    }
+    class EspecificacionY {
+        +es_satisfecha_por(documento) bool
+    }
+    class EspecificacionO {
+        +es_satisfecha_por(documento) bool
+    }
+    class EspecificacionDocumentoActivo {
+        +es_satisfecha_por(documento) bool
+    }
+    class EspecificacionTipoSoportado {
+        -list tipos_soportados
+        +es_satisfecha_por(documento) bool
+    }
+
+    class RepositorioResultados {
+        <<interface>>
+        +guardar(resultado)
+        +buscar_por_id_documento(id_documento) ResultadoProcesamiento
+    }
+    class RepositorioResultadosEnMemoria {
+        -dict almacen
+        +guardar(resultado)
+        +buscar_por_id_documento(id_documento) ResultadoProcesamiento
+    }
+    class RepositorioResultadosSQL {
+        -str cadena_conexion
+        +guardar(resultado)
+        +buscar_por_id_documento(id_documento) ResultadoProcesamiento
+    }
+    class FabricaRepositorio {
+        +crear(tipo_persistencia, cadena_conexion) RepositorioResultados
+    }
+
+    class ConstructorPrompt {
+        -list partes
+        +con_titulo(titulo) ConstructorPrompt
+        +con_id(id_documento) ConstructorPrompt
+        +con_likes(likes) ConstructorPrompt
+        +con_fecha_publicacion(fecha) ConstructorPrompt
+        +con_autores(autores) ConstructorPrompt
+        +con_resumen(resumen) ConstructorPrompt
+        +construir() str
+        +desde_resultado(resultado) str
+    }
+
+    class ServicioOrquestacion {
+        -RepositorioResultados repositorio
+        -Especificacion especificacion
+        +procesar_documento(documento) ResultadoProcesamiento
+        +generar_prompt_para(id_documento) str
+    }
+
+    DocumentoCientifico "1" o-- "0..*" Autor : autores
+
+    ParserDocumento <|.. ParserPDF
+    ParserDocumento <|.. ParserDOC
+    ParserDocumento <|.. ParserTXT
+    FabricaParsers ..> ParserDocumento : crea
+    ParserDocumento ..> DocumentoCientifico : procesa
+    ParserDocumento ..> ResultadoProcesamiento : crea
+
+    Especificacion <|.. EspecificacionY
+    Especificacion <|.. EspecificacionO
+    Especificacion <|.. EspecificacionDocumentoActivo
+    Especificacion <|.. EspecificacionTipoSoportado
+    EspecificacionY --> Especificacion : compone
+    EspecificacionO --> Especificacion : compone
+    Especificacion ..> DocumentoCientifico : valida
+
+    RepositorioResultados <|.. RepositorioResultadosEnMemoria
+    RepositorioResultados <|.. RepositorioResultadosSQL
+    FabricaRepositorio ..> RepositorioResultados : crea
+    RepositorioResultados ..> ResultadoProcesamiento : persiste
+
+    ConstructorPrompt ..> ResultadoProcesamiento : usa
+
+    ServicioOrquestacion --> RepositorioResultados : usa
+    ServicioOrquestacion --> Especificacion : usa
+    ServicioOrquestacion ..> FabricaParsers : usa
+    ServicioOrquestacion ..> ConstructorPrompt : usa
+    ServicioOrquestacion ..> DocumentoCientifico : procesa
